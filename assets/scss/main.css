@@ -143,10 +143,10 @@ main {
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: 3.5rem;
+  top: 0;
   left: 0;
   background-color: #191932;
-  overflow-y: hidden;
+  overflow: hidden;
   transition: 0.5s;
 }
 
@@ -166,6 +166,7 @@ main {
   color: #c3c5e5;
   display: block;
   transition: 0.3s;
+  text-align: center;
 }
 
 .overlay a:hover,

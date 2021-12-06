@@ -204,10 +204,10 @@ main {
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: 3.5rem;
+  top: 0;
   left: 0;
   background-color: rgba(25, 25, 50, 1);
-  overflow-y: hidden;
+  overflow: hidden;
   transition: 0.5s;
 }
 
@@ -215,7 +215,6 @@ main {
   position: absolute;
   width: 100%;
   text-align: left;
-
   top: 20%;
   margin: 2rem 2rem;
   overflow-y: hidden;
@@ -228,6 +227,7 @@ main {
   color: $accent;
   display: block;
   transition: 0.3s;
+  text-align: center;
 }
 
 .overlay a:hover,
