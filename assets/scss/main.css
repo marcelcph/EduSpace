@@ -137,7 +137,8 @@ main {
   display: grid;
   width: 200px;
   grid: row;
-      grid-template-areas: "p  a" "p t";
+      grid-template-areas: "p  a"
+ "p t";
 }
 
 .mobiletop .profile_picture {
@@ -374,7 +375,8 @@ main {
   display: grid;
   width: 200px;
   grid: row;
-      grid-template-areas: "p  a" "p t";
+      grid-template-areas: "p  a"
+ "p t";
 }
 
 .feed .feed_post .post_info .post_author-pic {
@@ -456,13 +458,12 @@ main {
 
 .sidebarnav {
   background-color: #191932;
-  top: 0;
+  position: fixed;
+  top: 3.5rem;
   left: 0;
   padding: 20px 20px;
   text-align: left;
-  margin: -2rem 0rem 0rem -1rem !important;
-  min-height: 80vw;
-  max-height: 100vw;
+  height: 100vw;
 }
 
 .sidebarnav ul li {
@@ -493,6 +494,9 @@ main {
     grid-gap: 20px;
     -ms-grid-rows: (250px)[4];
         grid-template-rows: repeat(4, 250px);
+  }
+  .container {
+    margin-left: 5rem;
   }
   .mobilenav {
     display: none;

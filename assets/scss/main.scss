@@ -443,13 +443,12 @@ main {
 
 .sidebarnav {
   background-color: $main-c;
-  top: 0;
+  position: fixed;
+  top: 3.5rem;
   left: 0;
   padding: 20px 20px;
   text-align: left;
-  margin: -2rem 0rem 0rem -1rem !important;
-  min-height: 80vw;
-  max-height: 100vw;
+  height: 100vw;
 
   ul li {
     color: $white-1;
@@ -478,7 +477,9 @@ main {
     grid-gap: 20px;
     grid-template-rows: repeat(4, 250px);
   }
-
+  .container {
+    margin-left: 5rem;
+  }
   .mobilenav {
     display: none;
   }
