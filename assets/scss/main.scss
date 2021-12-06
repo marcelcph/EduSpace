@@ -10,7 +10,8 @@ $white-2: #f6f6f6;
 $white-3: #f3f2f8;
 $border-radius-1: 8px;
 $border-radius-card: 27px;
-$main-font: "Poppins", sans-serif;
+$main-font: "Poppins",
+sans-serif;
 $display-font: "Comfortaa";
 
 /*   typography  start  */
@@ -87,16 +88,18 @@ main {
 
     li {
       margin: 0.5rem 1rem 0.5rem 1rem;
+
       a {
-        color: $accent;      
-      .icon {
-        height: 2em;
-        width: 2em;
+        color: $accent;
+
+        .icon {
+          height: 2em;
+          width: 2em;
+        }
       }
     }
-    }
 
-  
+
   }
 }
 
@@ -145,52 +148,45 @@ main {
   overflow: auto;
 
   .dot {
-    height: 120px;
-    width: 120px;
+    height: 250px;
+    width: 250px;
     border-radius: 20px;
     margin-right: 1rem;
     color: $white-1;
   }
 
   .dot1 {
-    background-image: linear-gradient(
-      to bottom right,
-      rgba(255, 190, 100, 1),
-      rgba(198, 85, 85, 1)
-    ) !important;
+    background-image: linear-gradient(to bottom right,
+        rgba(255, 190, 100, 1),
+        rgba(198, 85, 85, 1)) !important;
   }
 
   .dot2 {
-    background-image: linear-gradient(
-      to bottom right,
-      rgba(95, 164, 69, 1),
-      rgba(161, 186, 122, 1)
-    ) !important;
+    background-image: linear-gradient(to bottom right,
+        rgba(95, 164, 69, 1),
+        rgba(161, 186, 122, 1)) !important;
   }
 
   .dot3 {
-    background-image: linear-gradient(
-      to bottom right,
-      rgba(131, 69, 164, 1),
-      rgba(232, 94, 94, 1)
-    ) !important;
+    background-image: linear-gradient(to bottom right,
+        rgba(131, 69, 164, 1),
+        rgba(232, 94, 94, 1)) !important;
   }
 
   .dot4 {
-    background-image: linear-gradient(
-      to bottom right,
-      rgba(255, 190, 100, 1),
-      rgba(198, 85, 85, 1)
-    ) !important;
+    background-image: linear-gradient(to bottom right,
+        rgba(255, 190, 100, 1),
+        rgba(198, 85, 85, 1)) !important;
   }
 
   span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
     text-align: center;
+    font-size: 1.5rem;
   }
 }
 
@@ -231,8 +227,10 @@ main {
     text-overflow: ellipsis;
   }
 }
+
 .assignment-wrapper {
   margin: 0px 0px 18px 0px;
+
   .assignment-card {
     white-space: nowrap;
     background-color: $white-1;
@@ -256,6 +254,7 @@ main {
       text-overflow: ellipsis;
     }
   }
+
   .assignment-subject {
     color: $light-text;
     font-size: 1em;
@@ -301,7 +300,7 @@ main {
         grid-area: t;
         grid-row: 2;
         grid-column: 2;
-        color:$light-text;
+        color: $light-text;
       }
 
       .post_title {
@@ -311,11 +310,12 @@ main {
 
     .post_content {
       padding-top: 1rem;
-    } 
+    }
 
     .post_image {
       width: 100%;
-      img { 
+
+      img {
         max-height: 600px;
         max-width: 100%;
         padding: 0.5rem 0rem;
@@ -330,10 +330,12 @@ main {
     padding: 1em;
     border-radius: 8px;
     margin-bottom: 1em;
+
     a {
       color: $highlight;
       text-decoration: none;
     }
+
     .update_time {
       color: $light-text;
     }
@@ -348,15 +350,19 @@ main {
   padding: 20px 20px;
   text-align: left;
   margin: -2rem 0rem 0rem -1rem !important;
+
   ul li {
     color: $white-1;
     padding: 20px 0px;
 
-    a {color: $accent;}
+    a {
+      color: $accent;
+    }
   }
 }
-.sidebarbottom{
-    border-top: 1px solid white;
+
+.sidebarbottom {
+  border-top: 1px solid white;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -372,25 +378,31 @@ main {
     grid-gap: 20px;
     grid-template-rows: repeat(4, 250px);
   }
+
   .mobilenav {
     display: none;
   }
+
   .sidebarnav {
     grid-column: 1 / span 2;
     grid-row: 1 / span 4;
   }
+
   .schedule {
     grid-column: 12 / span 6;
     grid-row: 1 / span 2;
   }
+
   .assignment {
     grid-column: 12 / span 6;
     grid-row: 3 / span 3;
   }
+
   .feed {
     grid-column: 3 / span 9;
     grid-row: 2 / span 6;
   }
+
   .favoritespaces {
     grid-column: 3 / span 9;
   }
