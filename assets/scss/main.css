@@ -131,6 +131,49 @@ main {
   width: 2em;
 }
 
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 3.5rem;
+  left: 0;
+  background-color: #191932;
+  overflow-y: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  top: 20%;
+  margin: 2rem 2rem;
+  overflow-y: hidden;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #c3c5e5;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 /*    NAVIGATION END     */
 /*      FAVORITE      */
 .favorite {
@@ -144,8 +187,8 @@ main {
 }
 
 .favorite .dot {
-  height: 250px;
-  width: 250px;
+  height: 175px;
+  width: 175px;
   border-radius: 20px;
   margin-right: 1rem;
   color: #ffffff;
@@ -181,10 +224,10 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 175px;
+  height: 175px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /*    Favorite END     */
@@ -334,9 +377,9 @@ main {
 }
 
 .feed .feed_post .post_image img {
-  max-height: 600px;
+  max-height: 400px;
   max-width: 100%;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 0rem 0rem 0rem;
 }
 
 .feed .feed_update {
@@ -434,6 +477,15 @@ main {
     -ms-grid-column: 3;
     -ms-grid-column-span: 9;
     grid-column: 3 / span 9;
+  }
+  .favoritespaces .favorite .dot {
+    height: 150px;
+    width: 150px;
+  }
+  .favoritespaces .favorite .dot span {
+    height: 150px;
+    width: 150px;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

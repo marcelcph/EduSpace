@@ -10,7 +10,7 @@
     <title>eduspace</title>
 </head>
 
-<body>
+<body class="mobiletest">
     <nav class="mobilenav">
         <ul>
             <li>
@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li>
-                <a class="menu-collapsed" href="#mobile-nav">
+                <a class="menu-collapsed" onclick="openNav()">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon h-5 w-5" viewBox="0 0 20 20"
                         fill="currentColor">
                         <path fill-rule="evenodd"
@@ -71,7 +71,18 @@
     </nav>
 
     <nav>
-
+        <div id="mobile-nav-overlay" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Dashboard</a>
+                <a href="#">Schedule</a>
+                <a href="#">Assignments</a>
+              <a href="#">Resources</a>
+              <a href="#">General info</a>
+              <a href="#">Spaces</a>
+             
+            </div>
+          </div>
     </nav>
 
 
@@ -226,10 +237,17 @@
                 </div>
 
             </article>
+
+
+            <article class="feed_update">
+                <p class="update_content"><a href="profile.html">James Mclean</a> has uploaded <span
+                        class="update_files-nr">1</span> file <a href="">project.pdf</a></p>
+                <div class="update_time">12. Nov.</div>
+            </article>
             <article class="feed_post">
                 <div class="post_info"> <img class="post_author-pic" src="assets/img/teacher-sm.jpg" alt="">
                     <div class="post_author-name">James Mclean</div>
-                    <div class="post_time">12. November</div>
+                    <div class="post_time">12. Nov.</div>
                 </div>
                 <div class="post_content">
                     <p class="post_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -240,10 +258,12 @@
                     </p>
                 </div>
             </article>
+
+
             <article class="feed_post">
                 <div class="post_info"> <img class="post_author-pic" src="assets/img/teacher-sm.jpg" alt="">
                     <div class="post_author-name">James Mclean</div>
-                    <div class="post_time">12. Nov</div>
+                    <div class="post_time">12. Nov.</div>
                 </div>
                 <div class="post_content">
                     <p class="post_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -260,7 +280,7 @@
             <article class="feed_update">
                 <p class="update_content"><a href="profile.html">James Mclean</a> has uploaded <span
                         class="update_files-nr">1</span> file <a href="">project.pdf</a></p>
-                <div class="update_time">12. November</div>
+                <div class="update_time">12. Nov.</div>
             </article>
 
 
