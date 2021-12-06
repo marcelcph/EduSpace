@@ -281,7 +281,7 @@ main {
   display: grid;
   width: 200px;
   grid: row;
-      grid-template-areas: "p  a" "p t";
+      grid-template-areas: "p  a" "p t";
 }
 
 .feed .feed_post .post_info .post_author-pic {
@@ -317,6 +317,7 @@ main {
   grid-row: 2;
   -ms-grid-column: 2;
   grid-column: 2;
+  color: #7b7485;
 }
 
 .feed .feed_post .post_info .post_title {
@@ -325,6 +326,33 @@ main {
 
 .feed .feed_post .post_content {
   padding-top: 1rem;
+}
+
+.feed .feed_post .post_image {
+  width: 100%;
+}
+
+.feed .feed_post .post_image img {
+  max-height: 600px;
+  max-width: 100%;
+  padding: 0.5rem 0rem;
+}
+
+.feed .feed_update {
+  background-color: #ffffff;
+  border: 1px solid #bfc9d8;
+  padding: 1em;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+.feed .feed_update a {
+  color: #463fca;
+  text-decoration: none;
+}
+
+.feed .feed_update .update_time {
+  color: #7b7485;
 }
 
 .sidebarnav {
@@ -340,6 +368,10 @@ main {
 .sidebarnav ul li {
   color: #ffffff;
   padding: 20px 0px;
+}
+
+.sidebarnav ul li a {
+  color: #c3c5e5;
 }
 
 .sidebarbottom {
