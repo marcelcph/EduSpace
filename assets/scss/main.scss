@@ -73,7 +73,7 @@ h1 {
 }
 
 h3 {
-  color: #303046;
+  color: $secondary;
   font-weight: 600;
 }
 
@@ -211,7 +211,7 @@ main {
   grid-column: 2 / 3 ;
   color: $white-1;
 }
-#profilepicture {
+#profilepicture { 
   grid-row: 1 / 2;
   grid-column: 1 / 2 ;
   text-align: right;
@@ -260,7 +260,7 @@ main {
   z-index: 1;
   top: 3.5rem;
   left: 0;
-  background-color: rgba(25, 25, 50, 1);
+  background-color: $main-c;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -428,7 +428,7 @@ main {
     background-color: $white-1;
     border: 1px solid $border;
     padding: 1em;
-    border-radius: 8px;
+    border-radius: $border-radius-1;
     margin-bottom: 1em;
 
     .post_info {
@@ -477,7 +477,7 @@ main {
     background-color: $white-1;
     border: 1px solid $border;
     padding: 1em;
-    border-radius: 8px;
+    border-radius: $border-radius-1;
     margin-bottom: 1em;
 
     a {
@@ -536,10 +536,10 @@ main {
 }
 /* Login */
 #login-container{
-  background-color: #f3f2f8;
-  border: 1px solid #bfc9d8;
+  background-color: $white-3;
+  border: 1px solid $border;
   padding: 50px 20px;
-  border-radius: 8px;
+  border-radius: $border-radius-1;
   grid-column: 4/11;
   grid-row: 2;
   height: fit-content;
@@ -549,14 +549,14 @@ main {
     width: 98%;
     height: 2rem;
     margin: 3% 0;
-    border-radius: 8px;
+    border-radius: $border-radius-1;
     padding-left: 2%;
   }
   button{
     width: 101%;
     padding: 2%;
-    border-radius: 8px;
-    background-color: #191932;
+    border-radius: $border-radius-1;
+    background-color: $main-c;
     color: white;
     border-style: none;
     cursor: pointer;
@@ -578,11 +578,31 @@ footer {
     position: fixed;
     width: 100%;
     background-image: linear-gradient(
-354deg, #3e1788 0%, #191932 74%);
+354deg, #3e1788 0%, $main-c 74%);
     height: 100vh;
   }
 .sidebarbottom {
-  border-top: 1px solid $white-1;
+  border-top: 1px solid $accent;
+  color: $white-3;
+}
+.nestednavitems{
+  margin-top: 1.5rem;
+  color: $accent;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 3rem;
+  a{
+    color: $accent;
+    text-decoration: none;
+    padding-left: 2rem;  
+  }
+  a:hover {
+    color:$white-1;
+  }
+}
+
+.inside{
+  margin: 2rem 0rem;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -623,7 +643,7 @@ footer {
     grid-template-rows: repeat(4, 120px);
   }
   .container {
-    margin-left: calc(9rem + 40px + 1rem );
+    margin-left: calc(12rem + 40px + 1rem);
   }
   .mobilenav {
     display: none;
@@ -632,7 +652,7 @@ footer {
   .sidebarnav {
     grid-column: 1 / span 2;
     grid-row: 1 / span 4;
-    width: 131px;
+    width: 12rem;
   }
 
   .schedule {

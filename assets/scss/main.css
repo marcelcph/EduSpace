@@ -8,7 +8,7 @@ h1 {
 }
 
 h3 {
-  color: #303046;
+  color: #373966;
   font-weight: 600;
 }
 
@@ -494,7 +494,28 @@ footer ul {
 }
 
 .sidebarbottom {
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #c3c5e5;
+  color: #f3f2f8;
+}
+
+.nestednavitems {
+  margin-top: 1.5rem;
+  color: #c3c5e5;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 3rem;
+}
+.nestednavitems a {
+  color: #c3c5e5;
+  text-decoration: none;
+  padding-left: 2rem;
+}
+.nestednavitems a:hover {
+  color: #ffffff;
+}
+
+.inside {
+  margin: 2rem 0rem;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -532,7 +553,7 @@ footer ul {
   }
 
   .container {
-    margin-left: calc(9rem + 40px + 1rem);
+    margin-left: calc(12rem + 40px + 1rem);
   }
 
   .mobilenav {
@@ -542,7 +563,7 @@ footer ul {
   .sidebarnav {
     grid-column: 1/span 2;
     grid-row: 1/span 4;
-    width: 131px;
+    width: 12rem;
   }
 
   .schedule {
