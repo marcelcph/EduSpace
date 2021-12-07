@@ -195,16 +195,15 @@ main {
 .overlay-content {
   position: absolute;
   width: 100%;
-  text-align: left;
-  top: 20%;
-  margin: 2rem 2rem;
   overflow-y: hidden;
+  top: 10%;
+  margin: 2rem 0rem;
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 15px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 1.3em;
   color: #c3c5e5;
   display: block;
   transition: 0.3s;
@@ -213,13 +212,15 @@ main {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 
 .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  font-size: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 8rem;
+  font-size: 40px;
 }
 
 /*    NAVIGATION END     */
@@ -557,12 +558,12 @@ footer ul {
   }
 
   .feed {
-    grid-column: 1/span 7;
+    grid-column: 1/span 8;
     grid-row: 3/fit-content;
   }
 
   .favoritespaces {
-    grid-column: 1/span 7;
+    grid-column: 1/span 8;
   }
   .favoritespaces .favorite .dot {
     height: 150px;
