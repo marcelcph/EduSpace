@@ -12,3 +12,11 @@ function closeNav() {
   document.getElementById("notification").style.display = "block";
 }
 
+function notificationPop() {
+  document.getElementById("notification_total").style.display = "none";
+  var e = document.getElementById("notification_overlay");
+        if ( e.style.display == 'block' )
+            e.style.display = 'none';
+        else
+            e.style.display = 'block';
+}

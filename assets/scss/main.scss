@@ -168,7 +168,6 @@ main {
 
   }
 }
-
 .mobiletop {
   height: 3.5em;
   position: fixed;
@@ -179,17 +178,12 @@ main {
   top: 0;
   padding-right: 5rem;
 
-  ul {
+ > ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     height: 100%;
-  }
-
-  li:last-child {
-    text-align: right;
-    padding-top: 6px;
   }
 
   a {
@@ -226,6 +220,42 @@ main {
   grid-row: 1 / 2;
   width: 30px;
   text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  padding-top: 6px;
+}
+#notification_total{
+  position: absolute;
+    bottom: 0px;
+    right: -10px;
+    background: red;
+    padding: 3px 8px;
+    font-size: 10px;
+    border: 2px solid $main-c;
+    color: $white-1;
+    border-radius: 50%;
+}
+#notification_overlay{
+  @include schedule-card();
+    position: absolute;
+    right: -80px;
+    top: 55px;
+    text-align: center;
+    display: none;
+    overflow: auto;
+    height: 30rem;
+    width: 17rem; 
+    ul {
+      li {
+        white-space: initial;
+        text-align: left;
+        border: 1px solid $border;
+        border-radius: 8px;
+        padding: 1rem;
+        background: #f6f6f6;
+        margin-bottom: 0.5rem;
+      }
+    }
 }
 #email {
   grid-column: 2 / 3 ;
