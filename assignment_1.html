@@ -126,23 +126,30 @@
                   </details>
             </ul>
         </div>
-        <div class="assignment-container card-container wrapper">
+        <div class="assignment-container card-container">
                 <h1>GDD2: Modelling</h1>
                 <h3> Description </h3>
                 <p> Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem, Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem Lorem ipsum Lorem
                 </p>
-                <h3> Group Delivery </h3>
-                <h3> Type of file, + max size</h3>
                 <h3>Attachments</h3>
-                <img class="fileformaticon" src="assets/img/pdfformat.png">
-                <span> Max file-size 30mb. </span>
-                <button class="main-button">Upload assignment</button>
+                <section class="assignment-info-container">
+                    <div><img class="attachment-format" src="assets/img/docformat.png" alt="">
+                        <a href="">Shakespear bootstrap attachments</a>
+                        <select src="assets/img/docformat.png" name="edit" id="">
+                            <option value="download">Download</option>
+                            <option value="preview">Preview</option>
+                        </select>
+                    </div>
+                    <div><img class="attachment-format" src="assets/img/pdfformat.png" alt="">
+                        <a href="">GDD 2 - Modelling</a> 
+                    </div>
+                </section>
+                <button class="upload-button">Upload assignment</button>
         </div>
-        <div class="card-container assignment-aside wrapper">
-            <h3> Group Delivery </h3>
-            <h3> Type of file, + max size</h3>
-            <img class="fileformaticon" src="assets/img/pdfformat.png">
-            <span> Max file-size 30mb. </span>
+        <div class="card-container assignment-aside assignment-info-container">
+            <p> Group Delivery </p>
+            <p> Type of file: <strong> PDF </strong></p>
+            <p> Max file-size: <strong> 30mb.</strong></p>
     </div>
         <script src="assets/js/app.js"></script>
     </main>
