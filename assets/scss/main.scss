@@ -555,7 +555,7 @@ main {
   }
 }
 .schedule-page {
-  grid-column: 1/span 8;
+  grid-column: 1/span 11;
   grid-row: 1;
   height: fit-content;
 }
@@ -564,6 +564,21 @@ main {
   flex: 1 1 25%;
   margin-right: 1%;
 }
+
+/* Schedule test  */
+
+
+.schedule-view {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.columnSchedule {
+display: grid;
+grid-template-rows: repeat(20, 1fr);
+}
+
+
 /* Login */
 #login-container{
   background-color: $white-3;
@@ -634,6 +649,12 @@ footer {
 
 .inside{
   margin: 2rem 0rem;
+}
+
+/* Assignment page */
+.assignment-container {
+  grid-column: 1 /span 6;
+  height: fit-content;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -718,3 +739,4 @@ footer {
     }
   }
 }
+
