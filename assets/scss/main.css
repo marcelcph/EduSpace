@@ -735,12 +735,46 @@ footer ul {
   grid-column: 12/span 1;
 }
 
-.profileimg {
-  grid-column: 1/span 3;
-  grid-row: 1/span 3;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+.profileinfo p {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  margin-top: -0.5rem;
+}
+
+.profilesome {
+  margin-top: 3rem;
+}
+.profilesome svg {
+  display: inline-block;
+  margin: auto;
+  fill: #463fca;
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.change-profile label {
+  font-size: 1.2em;
+}
+.change-profile input[type=submit] {
+  padding: 2%;
+  border-radius: 4px;
+  background-color: #191932;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+.change-profile input[type=submit]:hover {
+  background: #373966;
+}
+.change-profile input[type=text], .change-profile input[type=url], .change-profile input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 1100px) {
