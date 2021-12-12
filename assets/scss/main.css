@@ -707,6 +707,58 @@ footer ul {
   margin-bottom: 2rem;
 }
 
+.nestedresitems {
+  background-color: #191932;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 10px;
+}
+.nestedresitems a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 2rem;
+  border-radius: 8px;
+}
+.nestedresitems a:hover {
+  color: #463fca;
+}
+
+.resources {
+  grid-column: 1/span 13;
+  margin-top: 5rem;
+  color: #ffffff;
+}
+
+.file-information {
+  margin-left: 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #191932;
+  border-bottom: 1px solid #bfc9d8;
+  padding: 10px;
+}
+.file-information h3 {
+  color: #ffffff;
+}
+.file-information p {
+  font-size: 1em;
+}
+.file-information .fileinfo1 {
+  grid-column: 1/span 9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-information .fileinfo2 {
+  grid-column: 10/span 1;
+}
+.file-information .fileinfo3 {
+  grid-column: 12/span 1;
+}
+
 @media only screen and (max-width: 1100px) {
   .sidebarnav {
     display: none;

@@ -804,9 +804,66 @@ vertical-align: middle;
 
 #myprofile-img {
 
+}
 
+
+.nestedresitems{
+  background-color: $main-c;
+  color: $white-1;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0.5rem;
+  border-radius: $border-radius-1;
+  margin: 10px;
+  a{
+    color: $white-1;
+    text-decoration: none;
+    padding-left: 2rem;  
+    border-radius: $border-radius-1;
+  }
+  a:hover {
+    color:$highlight;
+  } 
+}
+
+.resources {
+  grid-column: 1 / span 13;
+  margin-top: 5rem;  //SKIFT!!!!!!!!!!!!!!!!!!!!!!!!!
+  color: $white-1;
+}
+
+
+
+
+.file-information {
+  margin-left: 2rem;
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: $main-c;
+  border-bottom: 1px solid $border;
+  padding: 10px;
+  h3{
+    color: $white-1;
+  } p{
+    font-size: 1em;
+  }
+  .fileinfo1 {
+    grid-column: 1 / span 9;
+    overflow:hidden; 
+    text-overflow: ellipsis;
+  }
+  .fileinfo2 {
+    grid-column: 10 / span 1;
+  }
+  .fileinfo3 {
+    grid-column: 12 / span 1;
+  }
 
 }
+
+
+
 
 
 @media only screen and (max-width: 1100px) {
