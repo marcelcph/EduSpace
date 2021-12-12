@@ -189,10 +189,11 @@ main {
   position: fixed;
   background-color: $main-c;
   text-decoration: none;
-  left: calc(12rem + 40px);
+  left: 0;
   right: 0;
   top: 0;
   padding-right: 5rem;
+
 
   .logodesktop {
     display: none;
@@ -545,13 +546,7 @@ main {
 }
 
 .sidebarnav {
-  background-color: $main-c;
-  position: fixed;
-  top: 0rem;
-  left: 0;
-  padding: 20px 20px;
-  text-align: left;
-  height: 100vw;
+  
 
   .icon {
     height: 18px;
@@ -785,27 +780,7 @@ vertical-align: middle;
 }
 
 
-
-/*      Profile page     */
-
-.myprofile {
-  grid-column: 1 / span 3
-}
-
-.account-picture {
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-}
-
-#myprofile-img {
-
-}
-
+//RESOURCES START
 
 .nestedresitems{
   background-color: $main-c;
@@ -861,6 +836,21 @@ vertical-align: middle;
   }
 
 }
+//RESOURCES END
+
+//PROFILE START
+.myprofile{
+
+}
+.profileimg{
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+//PROFILE END
+
 
 
 
@@ -872,11 +862,16 @@ vertical-align: middle;
   }
   .mobiletop{
     padding-right: 1rem !important;
-  
     }
 }
 
 @media only screen and (min-width: 800px) {
+  
+  .mobiletop {
+    border-left: 1px solid rgba(244, 237, 255, 0.17);
+    left:0;
+  }
+
   .logodesktop{
     display: block; 
     margin-bottom: 1rem;
@@ -886,9 +881,7 @@ vertical-align: middle;
       }
     }
   }
-  .logo {
-    display: none;
-  }
+ 
   footer {
     ul {
       flex-direction: row;
@@ -910,15 +903,25 @@ vertical-align: middle;
     display: none;
   }
 
-  .mobiletop {
-    border-left: 1px solid rgba(244, 237, 255, 0.17);
+  .logo {
+    display: none;
   }
 
+
+  .mobiletop {
+    left: 12rem;
+  }
+ 
   .sidebarnav {
     grid-column: 1 / span 2;
     grid-row: 1 / span 4;
     width: 12rem; 
-
+    background-color: $main-c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    height: 100vw;
     a {
       color: $accent;
     }

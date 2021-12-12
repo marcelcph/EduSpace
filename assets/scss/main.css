@@ -92,7 +92,7 @@ main {
   position: fixed;
   background-color: #191932;
   text-decoration: none;
-  left: calc(12rem + 40px);
+  left: 0;
   right: 0;
   top: 0;
   padding-right: 5rem;
@@ -433,15 +433,6 @@ main {
   color: #7b7485;
 }
 
-.sidebarnav {
-  background-color: #191932;
-  position: fixed;
-  top: 0rem;
-  left: 0;
-  padding: 20px 20px;
-  text-align: left;
-  height: 100vw;
-}
 .sidebarnav .icon {
   height: 18px;
   vertical-align: text-bottom;
@@ -692,21 +683,6 @@ footer ul {
   vertical-align: middle;
 }
 
-/*      Profile page     */
-.myprofile {
-  grid-column: 1/span 3;
-}
-
-.account-picture {
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-}
-
 .nestedresitems {
   background-color: #191932;
   color: #ffffff;
@@ -759,6 +735,14 @@ footer ul {
   grid-column: 12/span 1;
 }
 
+.profileimg {
+  grid-column: 1/span 3;
+  grid-row: 1/span 3;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 @media only screen and (max-width: 1100px) {
   .sidebarnav {
     display: none;
@@ -769,16 +753,17 @@ footer ul {
   }
 }
 @media only screen and (min-width: 800px) {
+  .mobiletop {
+    border-left: 1px solid rgba(244, 237, 255, 0.17);
+    left: 0;
+  }
+
   .logodesktop {
     display: block;
     margin-bottom: 1rem;
   }
   .logodesktop a img {
     width: 100%;
-  }
-
-  .logo {
-    display: none;
   }
 
   footer ul {
@@ -801,14 +786,24 @@ footer ul {
     display: none;
   }
 
+  .logo {
+    display: none;
+  }
+
   .mobiletop {
-    border-left: 1px solid rgba(244, 237, 255, 0.17);
+    left: 12rem;
   }
 
   .sidebarnav {
     grid-column: 1/span 2;
     grid-row: 1/span 4;
     width: 12rem;
+    background-color: #191932;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    height: 100vw;
   }
   .sidebarnav a {
     color: #c3c5e5;
