@@ -684,8 +684,8 @@ footer ul {
 }
 
 .nestedresitems {
-  background-color: #191932;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #191932;
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
@@ -694,7 +694,7 @@ footer ul {
   margin: 10px;
 }
 .nestedresitems a {
-  color: #ffffff;
+  color: #191932;
   text-decoration: none;
   padding-left: 2rem;
   border-radius: 8px;
@@ -704,7 +704,7 @@ footer ul {
 }
 
 .resources {
-  grid-column: 1/span 13;
+  grid-column: 1/span 14;
   margin-top: 5rem;
   color: #ffffff;
 }
@@ -713,8 +713,9 @@ footer ul {
   margin-left: 2rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: #191932;
-  border-bottom: 1px solid #bfc9d8;
+  background-color: #ffffff;
+  border: 1px solid #bfc9d8;
+  border-radius: 8px;
   padding: 10px;
 }
 .file-information h3 {
@@ -735,7 +736,7 @@ footer ul {
   grid-column: 12/span 1;
 }
 
-.profileinfo p {
+.container .profileinfo {
   padding: 0.5rem 0rem 0.5rem 0rem;
   margin-top: -0.5rem;
 }
@@ -763,6 +764,9 @@ footer ul {
   border-style: none;
   cursor: pointer;
   padding: 1rem;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .change-profile input[type=submit]:hover {
   background: #373966;
@@ -775,6 +779,21 @@ footer ul {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.changeinfo {
+  padding: 2%;
+  border-radius: 4px;
+  background-color: #191932;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.changeinfo:hover {
+  background: #373966;
 }
 
 @media only screen and (max-width: 1100px) {

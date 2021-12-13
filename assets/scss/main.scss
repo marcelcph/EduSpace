@@ -783,8 +783,8 @@ vertical-align: middle;
 //RESOURCES START
 
 .nestedresitems{
-  background-color: $main-c;
-  color: $white-1;
+  background-color: $white-1;
+  color: $main-c;
   text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
@@ -792,18 +792,18 @@ vertical-align: middle;
   border-radius: $border-radius-1;
   margin: 10px;
   a{
-    color: $white-1;
+    color: $main-c;
     text-decoration: none;
     padding-left: 2rem;  
     border-radius: $border-radius-1;
   }
   a:hover {
     color:$highlight;
-  } 
+  }
 }
 
 .resources {
-  grid-column: 1 / span 13;
+  grid-column: 1 / span 14;
   margin-top: 5rem;  //SKIFT!!!!!!!!!!!!!!!!!!!!!!!!!
   color: $white-1;
 }
@@ -815,8 +815,9 @@ vertical-align: middle;
   margin-left: 2rem;
   display:grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: $main-c;
-  border-bottom: 1px solid $border;
+  background-color: $white-1;
+  border: 1px solid $border;
+  border-radius: $border-radius-1;
   padding: 10px;
   h3{
     color: $white-1;
@@ -840,12 +841,15 @@ vertical-align: middle;
 
 //PROFILE START
 .myprofile{
+
 }
 
-.profileinfo p{
+
+.container .profileinfo{
   padding: 0.5rem 0rem 0.5rem 0rem;
   margin-top: -0.5rem;
 }
+
 .profilesome {
   margin-top: 3rem;
   svg{
@@ -864,6 +868,9 @@ vertical-align: middle;
 input[type=submit]{
   @include main-button();
   padding: 1rem;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 input[type=text], input[type=url], input[type=date] {
   width: 100%;
@@ -874,6 +881,12 @@ input[type=text], input[type=url], input[type=date] {
   border-radius: 4px;
   box-sizing: border-box;
 }
+}
+.changeinfo{
+  @include main-button();
+  padding: 1rem;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 //PROFILE END
 
