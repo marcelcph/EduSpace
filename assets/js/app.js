@@ -20,3 +20,13 @@ function notificationPop() {
         else
             e.style.display = 'block';
 }
+
+const elementYouWantToShow = document.querySelector(".submenu-group");
+const chevronClicked = document.querySelector(".chevron");
+function toggleAccordion(a) {
+  console.log(a);
+  elementYouWantToShow.classList.toggle("hide");
+  chevronClicked.classList.toggle("chevron-active");
+}
+
+
