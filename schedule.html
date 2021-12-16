@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: f0f0f5;">
 
 <head>
     <link rel="stylesheet" href="assets/scss/main.css">
@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="manifest" href="assets/img/site.webmanifest">
-    <title>EDUSPACE - Schedule</title>
+    <title>EDUSPACE - Schedule test</title>
 </head>
 
 <body class="mobiletest">
@@ -64,178 +64,593 @@
     </nav>
     <nav class="navbar-top">
         <ul>
-            <li class="logo"><a href="index.html"><img  src="assets/img/logo.png" alt="">
-            </a></li>
-            <li class="logodesktop"><a href="index.html"><img  src="assets/img/logo-text.svg" alt="">
+            <li class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="">
                 </a></li>
-                <section id="profilewrapper">
-                    <div id="profilepicture"><img src="assets/img/teacher-sm.jpg"></div>
-                    <div id="email">Email@hotmail.com</div>
-                    <div id="fullname">John Johnson</div>
-                    <li id="notification"><a onclick='notificationPop()'><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                        <path
-                            d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-                    </svg><span id="notification_total">2</span></a><section id="notification_overlay"><h3>Latest notifications</h3><ul><li><h4>Schedule change</h4><p>Due to transport issues, todays class have been delayed. See todays schedule</p></li><li><h4>Feedback - UX design</h4><p>Feedback available on mandatory 2 on EDUSPACE</p></li><li><h4>Schedule change</h4><p>Due to transport issues, todays class have been delayed. See todays schedule</p></li><li><h4>Schedule change</h4><p>Due to transport issues, todays class have been delayed. See todays schedule</p></li></ul></section></li>
+            <li class="logodesktop"><a href="index.html"><img src="assets/img/logo-text.svg" alt="">
+                </a></li>
+            <section id="profilewrapper">
+                <div id="profilepicture"><img src="assets/img/teacher-sm.jpg"></div>
+                <div id="email">Email@hotmail.com</div>
+                <div id="fullname">John Johnson</div>
+                <li id="notification"><a onclick='notificationPop()'><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                        </svg><span id="notification_total">2</span></a>
+                    <section id="notification_overlay">
+                        <h3>Latest notifications</h3>
+                        <ul>
+                            <li>
+                                <h4>Schedule change</h4>
+                                <p>Due to transport issues, todays class have been delayed. See todays schedule</p>
+                            </li>
+                            <li>
+                                <h4>Feedback - UX design</h4>
+                                <p>Feedback available on mandatory 2 on EDUSPACE</p>
+                            </li>
+                            <li>
+                                <h4>Schedule change</h4>
+                                <p>Due to transport issues, todays class have been delayed. See todays schedule</p>
+                            </li>
+                            <li>
+                                <h4>Schedule change</h4>
+                                <p>Due to transport issues, todays class have been delayed. See todays schedule</p>
+                            </li>
+                        </ul>
                     </section>
-                
+                </li>
+            </section>
+
         </ul>
     </nav>
 
     <nav>
         <div id="mobile-nav-overlay" class="overlay">
             <div class="overlay-content">
-                <a href="index.html">Dashboard</a>
-                <a href="schedule.html">Schedule</a>
-                <a href="assignments.html">Assignments</a>
-              <a href="#">Resources</a>
-              <a href="#">General info</a>
-              <a href="#">Spaces</a>
-                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close <span>&times;</span></a>
+                <a href="#">Dashboard</a>
+                <a href="#">Schedule</a>
+                <a href="#">Assignments</a>
+                <a href="#">Resources</a>
+                <a href="#">General info</a>
+                <a href="#">Spaces</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close <span>&times;</span></a>
 
             </div>
-          </div>
+        </div>
     </nav>
 
 
     <main class="container">
         <div class="sidebarnav">
-            <ul>
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="assignments.html">Assignments</a></li>
-                <li><a href="">Resources</a></li>
-                <li><a href="">General info</a></li>
-            </ul>
+            <div class="sidebartop">
+                <div class="logodesktop">
+                    <a class="" href="index.html"><img src="assets/img/logo-text.svg" alt="">
+                    </a>
+                </div>
 
-            <ul class="sidebarbottom">
-                <h2>Spaces</h2>
+                <div class="menu-item-row">
+                    <a href="./index.html">
+                        <div class="menu-item">
+                            <span class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-5 w-5"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                </svg></span>
+                            <span class="menu-name">Dashboard</span>
+                        </div>
+                    </a>
+                </div>
 
-                <details class="nestednavitems">
-                    <summary>Webdev - 1. sem</summary>
-                    <div>
-                      <a href="#">User Experience</a>
-                      <a href="#">Web Development</a>
-                      <a href="#">Database</a>
-                      </div>
-                  </details>
-            </ul>
-                <details class="nestednavitems">
-                    <summary>Webdev - 2. sem</summary>
-                    <div>
-                      <a href="#">User Experience</a>
-                      <a href="#">Web Development</a>
-                      <a href="#">Database</a>
-                      </div>
-                  </details>
-            </ul>
+                <div class="menu-item-row menu-active">
+                    <a href="./schedule.html">
+                        <div class="menu-item">
+                            <span class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-5 w-5"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                        clip-rule="evenodd" />
+                                </svg></span>
+                            <span class="menu-name">Schedule</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="menu-item-row">
+                    <a href="./assignments.html">
+                        <div class="menu-item">
+                            <span class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-5 w-5"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                                    <path
+                                        d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z" />
+                                </svg></span>
+                            <span class="menu-name">Assignments</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="menu-item-row">
+                    <a href="./resources.html">
+                        <div class="menu-item">
+                            <span class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-5 w-5"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                        clip-rule="evenodd" />
+                                </svg></span>
+                            <span class="menu-name">Resources</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="menu-item-row">
+                    <a href="./index.html">
+                        <div class="menu-item">
+                            <span class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-5 w-5"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                        clip-rule="evenodd" />
+                                </svg></span>
+                            <span class="menu-name">General info</span>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="sidebarbottom">
+                <div class="menu-item-row">
+                    <a class="" href="./index.html">
+                        <div class="menu-item">
+                            <span class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-5 w-5"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
+                                        clip-rule="evenodd" />
+                                </svg></span>
+                            <span class="menu-name">Spaces</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="space-group">
+                <div id="team1" class="menu-item-row">
+                    <a href="#" class="accordion" onclick="toggleAccordion(this);">
+                        <div class="menu-item">
+                            <span class="menu-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon chevron"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg></span>
+                            <span class="space-name">Team21 - Digicon</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="submenu-group accordion-item hide">
+                    <div class="menu-item-row">
+                        <a href="#" class="spaces-button">
+                            <div class="menu-item">
+                                <span class="menu-icon">
+                                    #
+                                    </svg></span>
+                                <span class="space-name">Marketing</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-item-row">
+                        <a href="#" class="spaces-button">
+                            <div class="menu-item">
+                                <span class="menu-icon">
+                                    #</span>
+                                <span class="space-name">Technology</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-item-row">
+                        <a href="#" class="spaces-button">
+                            <div class="menu-item">
+                                <span class="menu-icon">
+                                    #
+                                    </span>
+                                <span class="space-name">Service design</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-group">
+                <div class="menu-item-row">
+                    <a href="#" id="team1" class="accordion" onclick="toggleAccordion(this);">
+                        <div class="menu-item">
+                            <span class="menu-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon chevron"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                        clip-rule="evenodd" />
+                                </svg></span>
+                            <span class="space-name">Team21 - Digicon</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="submenu-group accordion-item hide">
+                    <div class="menu-item-row">
+                        <a href="#" class="spaces-button">
+                            <div class="menu-item">
+                                <span class="menu-icon">
+                                    #
+                                    </svg></span>
+                                <span class="space-name">Marketing</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-item-row">
+                        <a href="#" class="spaces-button">
+                            <div class="menu-item">
+                                <span class="menu-icon">
+                                    #</span>
+                                <span class="space-name">Technology</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="menu-item-row">
+                        <a href="#" class="spaces-button">
+                            <div class="menu-item">
+                                <span class="menu-icon">
+                                    #
+                                    </span>
+                                <span class="space-name">Service design</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                
+            </div>
+            </div>
+
+        <div class="schedule-page card-container wrapper ">
+            <h1 class="">Schedule</h1>
+            <div class="schedule-view">
+
+                <ul class="columnSchedule scheduleTime">
+                    <li>
+                        Week 32
+                    </li>
+                    <li>
+                        8:00
+                    </li>
+                    <li>
+                        8:30
+                    </li>
+                    <li>
+                        9:00
+                    </li>
+                    <li>
+                        9:30
+                    </li>
+                    <li>
+                        10:00
+                    </li>
+                    <li>
+                        10:30
+                    </li>
+                    <li>
+                        11:00
+                    </li>
+                    <li>
+                        11:30
+                    </li>
+                    <li>
+                        12:00
+                    </li>
+                    <li>
+                        12:30
+                    </li>
+                    <li>
+                        13:00
+                    </li>
+                    <li>
+                        13:30
+                    </li>
+                    <li>
+                        14:00
+                    </li>
+                    <li>
+                        14:30
+                    </li>
+                    <li>
+                        15:00
+                    </li>
+                    <li>
+                        15:30
+                    </li>
+                    <li>
+                        16:00
+                    </li>
+                    <li>
+                        16:30
+                    </li>
+                    <li>
+                        17:00
+                    </li>
+                </ul>
+                <ul class="columnSchedule scheduleDay">
+                    <li>
+                        Monday
+                    </li>
+
+                    <li class="timeBlock">
+                    <p>User Experience </p>
+                    </li>
+                </ul> 
+
+
+                <ul class="columnSchedule scheduleDay">
+                    <li>
+                        Tuesday
+                    </li>
+
+                    <li>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+                    
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                
+                    </li>
+                    <li>
+               
+                    </li>
+                    <li>
+        
+                    </li>
+                    <li>
+            
+                    </li>
+                    <li>
+                 
+                    </li>
+                    <li>
+                     
+                    </li>
+                    <li>
+              
+                    </li>
+                    <li>
+            
+                    </li>
+                    <li>
+          
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+               
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                
+                    </li>
+                    <li>
+                
+                    </li>
+                </ul>
+                <ul class="columnSchedule scheduleDay">
+                    <li>
+                        Wednesday
+                    </li>
+
+                    <li>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+                    
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                
+                    </li>
+                    <li>
+               
+                    </li>
+                    <li>
+        
+                    </li>
+                    <li>
+            
+                    </li>
+                    <li>
+                 
+                    </li>
+                    <li>
+                     
+                    </li>
+                    <li>
+              
+                    </li>
+                    <li>
+            
+                    </li>
+                    <li>
+          
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+               
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                
+                    </li>
+                    <li>
+                
+                    </li>
+                </ul>
+                <ul class="columnSchedule scheduleDay">
+                    <li>
+                       Thursday
+                    </li>
+
+                    <li>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+                    
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                
+                    </li>
+                    <li>
+               
+                    </li>
+                    <li>
+        
+                    </li>
+                    <li>
+            
+                    </li>
+                    <li>
+                 
+                    </li>
+                    <li>
+                     
+                    </li>
+                    <li>
+              
+                    </li>
+                    <li>
+            
+                    </li>
+                    <li>
+          
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+               
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                
+                    </li>
+                    <li>
+                
+                    </li>
+                </ul>
+                <ul class="columnSchedule scheduleDay">
+                    <li>
+                        Friday
+                    </li>
+
+                    <li>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+                    
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                
+                    </li>
+                    <li>
+               
+                    </li>
+                    <li>
+        
+                    </li>
+                    <li>
+            
+                    </li>
+                    <li>
+                 
+                    </li>
+                    <li>
+                     
+                    </li>
+                    <li>
+              
+                    </li>
+                    <li>
+            
+                    </li>
+                    <li>
+          
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+               
+                    </li>
+                    <li>
+                  
+                    </li>
+                    <li>
+                
+                    </li>
+                    <li>
+                
+                    </li>
+                </ul>
+            </div>
         </div>
-
-<div class="schedule-page card-container">
-    <h1>Schedule</h1>
-    <span class="date">Mon. 19</span>
-    <div id="lesson-card">
-    <div class="time-card">
-        <h3>8:30 - 10:00</h3>
-    </div>
-    <div class="schedule-card">
-        <h3>User Experience: GDD1</h3>
-        <ul>
-            <li>
-                <p class="location">Room: E434</p>
-            </li>
-        </ul>
-    </div>
-    <div class="time-card">
-        <h3>10:00 - 12:00</h3>
-    </div>
-    <div class="schedule-card">
-        <h3>User Experience: GDD1</h3>
-        <ul>
-            <li>
-                <p class="location">Room: E434</p>
-            </li>
-        </ul>
-    </div>
-    <div class="time-card">
-        <h3>12:30 - 14:00</h3>
-    </div>
-    <div class="schedule-card">
-        <h3>User Experience: GDD1</h3>
-        <ul>
-            <li>
-                <p class="location">Room: E434</p>
-            </li>
-        </ul>
-    </div>
-    <span class="date">Tue. 20</span>
-    <div class="time-card">
-        <h3>8:30 - 10:00</h3>
-    </div>
-    <div class="schedule-card">
-        <h3>User Experience: GDD2</h3>
-        <ul>
-            <li>
-                <p class="location">Room: E434</p>
-            </li>
-        </ul>
-    </div>
-    <div class="time-card">
-        <h3>10:00 - 12:00</h3>
-    </div>
-    <div class="schedule-card">
-        <h3>User Experience: GDD2</h3>
-        <ul>
-            <li>
-                <p class="location">Room: E434</p>
-            </li>
-        </ul>
-    </div>
-    <div class="time-card">
-        <h3>12:30 - 14:00</h3>
-    </div>
-    <div class="schedule-card">
-        <h3>User Experience: GDD2</h3>
-        <ul>
-            <li>
-                <p class="location">Room: E434</p>
-            </li>
-        </ul>
-    </div>
-    <span class="date">Wed. 21</span>
-    <div class="time-card">
-        <h3>8:30 - 10:00</h3>
-    </div>
-    <div class="schedule-card">
-        <h3>User Experience: GDD3</h3>
-        <ul>
-            <li>
-                <p class="location">Room: E434</p>
-            </li>
-        </ul>
-    </div>
-    <div class="time-card">
-        <h3>10:00 - 12:00</h3>
-    </div>
-    <div class="schedule-card">
-        <h3>User Experience: GDD3</h3>
-        <ul>
-            <li>
-                <p class="location">Room: E434</p>
-            </li>
-        </ul>
-    </div>
-    <div class="time-card">
-        <h3>12:30 - 14:00</h3>
-    </div>
-    <div class="schedule-card">
-        <h3>User Experience: GDD3</h3>
-        <ul>
-            <li>
-                <p class="location">Room: E434</p>
-            </li>
-        </ul>
-    </div>
-</div>
-<script src="assets/js/app.js"></script>
+        </main>
+        <script src="assets/js/app.js"></script>
 </body>
 </html>
