@@ -64,25 +64,47 @@
     </nav>
     <nav class="navbar-top">
         <ul>
-            <li class="logo"><a href="index.html"><img  src="assets/img/logo.png" alt="">
-            </a></li>
-            <li class="logodesktop"><a href="index.html"><img  src="assets/img/logo-text.svg" alt="">
+            <li class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="">
                 </a></li>
-                <section id="profilewrapper">
-                    <div id="profilepicture"><img src="assets/img/teacher-sm.jpg"></div>
-                    <div id="email">Email@hotmail.com</div>
-                    <div id="fullname">
-                        <a href="myprofile.html">John Johnson</a>
-                        </div>
-                    <li id="notification"><a onclick='notificationPop()'><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                                            <path
-                                                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-                                        </svg><span id="notification_total">2</span></a><section id="notification_overlay"><h3>Latest notifications</h3><ul><li><h4>Schedule change</h4><p>Due to transport issues, todays class have been delayed. See todays schedule</p></li><li><h4>Feedback - UX design</h4><p>Feedback available on mandatory 2 on EDUSPACE</p></li><li><h4>Schedule change</h4><p>Due to transport issues, todays class have been delayed. See todays schedule</p></li><li><h4>Schedule change</h4><p>Due to transport issues, todays class have been delayed. See todays schedule</p></li></ul></section></li>
+            <li class="logodesktop"><a href="index.html"><img src="assets/img/logo-text.svg" alt="">
+                </a></li>
+            <section id="profilewrapper">
+                <div id="profilepicture"><img src="assets/img/teacher-sm.jpg"></div>
+                <div id="email">Email@hotmail.com</div>
+                <div id="fullname">
+                    <a href="myprofile.html">John Johnson</a>
+                </div>
+                <li id="notification"><a onclick='notificationPop()'><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                        </svg><span id="notification_total">2</span></a>
+                    <section id="notification_overlay">
+                        <h3>Latest notifications</h3>
+                        <ul>
+                            <li>
+                                <h4>Schedule change</h4>
+                                <p>Due to transport issues, todays class have been delayed. See todays schedule</p>
+                            </li>
+                            <li>
+                                <h4>Feedback - UX design</h4>
+                                <p>Feedback available on mandatory 2 on EDUSPACE</p>
+                            </li>
+                            <li>
+                                <h4>Schedule change</h4>
+                                <p>Due to transport issues, todays class have been delayed. See todays schedule</p>
+                            </li>
+                            <li>
+                                <h4>Schedule change</h4>
+                                <p>Due to transport issues, todays class have been delayed. See todays schedule</p>
+                            </li>
+                        </ul>
                     </section>
-                
+                </li>
+            </section>
+
         </ul>
     </nav>
-
     <nav>
         <div id="mobile-nav-overlay" class="overlay">
             <div class="overlay-content">
@@ -304,6 +326,55 @@
 
     <div class="myprofile">
         <img src="assets/img/teacher-sm.jpg" alt="Profile Picture" class="profileimg">
+            <div class="card-container">
+                <div>
+                    <div class="profileinfo">
+                        <h3>Full name</h3>
+                        <ul>
+                            <li>
+                                <p>John Johnson</p>
+                            </li>
+                        </ul>
+
+                        <h3>Phone number</h3>
+                        <ul>
+                            <li>
+                                <p>+45 12 34 56 78</p>
+                            </li>
+                        </ul>
+                        
+                        <h3>Email Address</h3>
+                        <ul>
+                            <li>
+                                <p>email@hotmail.com</p>
+                            </li>
+                        </ul>
+                    
+
+                        <div class="profilesome">
+                            <h3>Social Media</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+        <div class="card-container change-profile">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" ><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="birthday">Date of birth:</label><br>
+                <input type="date" id="dateofbirth" name="birthday" onfocus="(this.type='date')" onfocusout="(this.type='text')"><br>
+                <label for="homepage">Linkedin</label><br>
+                <input type="url" id="homepage" name="linkedin"> <br>
+                <label for="homepage">Facebook</label><br>
+                <input type="url" id="homepage" name="facebook"><br>
+                <input type="submit" value="Update info">
+              </form> 
+        </div>
     </div>
 
     </main>
