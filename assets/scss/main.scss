@@ -13,7 +13,90 @@ $border-radius-card: 27px;
 $main-font: "Poppins", sans-serif;
 $display-font: "Comfortaa";
 
+<<<<<<< Updated upstream
 /*   typography  start  */
+=======
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-family: $main-font;
+  background-color: $white-2;
+}
+
+// MIXINS START
+@mixin profile-grid {
+  display: grid;
+  width: 200px;
+  grid: row;
+  grid-template-areas:
+    "p  a"
+    "p t";
+}
+
+@mixin profile-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  grid-area: p;
+  grid-column: 1;
+}
+
+@mixin profile-link {
+  font-weight: 500;
+  grid-area: a;
+  grid-row: 1;
+  grid-column: 2;
+
+  a {
+    color: $highlight;
+    text-decoration: none;
+  }
+}
+
+@mixin profile-text {
+  color: $light-text;
+  grid-area: t;
+  grid-row: 2;
+  grid-column: 2;
+  color: $light-text;
+}
+
+@mixin schedule-card {
+  white-space: nowrap;
+  background-color: $white-1;
+  border: 1px solid $border;
+  padding: 5px 20px;
+  border-radius: $border-radius-1;
+  margin: 0px 0px 18px 0px;
+}
+
+@mixin main-button {
+  padding: 2%;
+  border-radius: $border-radius-input;
+  font-family: $main-font;
+  background-color: $main-c;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $secondary;
+  }
+}
+
+@mixin fileformat-icon {
+  height: 40px;
+  width: 40px;
+}
+
+// MIXINS END
+
+// TYPOGRAPHY START
+>>>>>>> Stashed changes
 
 h1 {
   color: $main-c;
@@ -26,8 +109,9 @@ h3 {
   font-weight: 600;
 }
 
-/*   typography end  */
+// TYPOGRAPHY END
 
+<<<<<<< Updated upstream
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +120,16 @@ h3 {
 html {
   font-family: $main-font;
   background-color: $white-2;
+=======
+// GRID LAYOUT START
+
+.fileformat-overview {
+  width: 60px;
+  display: block;
+  margin-left: auto;
+  position: relative;
+  bottom: 90px;
+>>>>>>> Stashed changes
 }
 
 /*         Grid layout     */
@@ -43,9 +137,29 @@ html {
 .container {
   margin: 5rem 1rem 8rem 1rem;
 }
+main {
+  margin-bottom: 2rem;
+}
 
+<<<<<<< Updated upstream
 .wrapper {
   margin-bottom: 2rem;
+=======
+// GRID LAYOUT END
+
+// NAVIGATION START
+
+.logo {
+  width: 53px;
+  height: 53px;
+
+  a {
+    img {
+      height: 100%;
+      padding-left: 1rem;
+    }
+  }
+>>>>>>> Stashed changes
 }
 
 /*    NAVIGATION START     */
@@ -133,12 +247,115 @@ main {
   }
 }
 
-// Burger menu
+.sidebarbottom {
+  color: $white-3;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(244, 237, 255, 0.17);
+}
 
+.nestednavitems {
+  color: $accent;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 2rem;
+
+  a {
+    color: $accent;
+    text-decoration: none;
+    padding-left: 2rem;
+  }
+
+  div {
+    margin-bottom: 0.5rem;
+  }
+
+  a:hover {
+    color: $white-1;
+  }
+}
+
+// BURGER MENU START
+
+<<<<<<< Updated upstream
 /*    NAVIGATION END     */
 
 /*      FAVORITE      */
 // TODO: swipe card on mobile
+=======
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 3.5rem;
+  left: 0;
+  background-color: $main-c;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: absolute;
+  width: 100%;
+  overflow-y: hidden;
+  top: 10%;
+  margin: 2rem 0rem;
+}
+
+.overlay a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: $accent;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: $white-1;
+}
+
+.overlay .closebtn {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 8rem;
+  font-size: 40px;
+}
+
+// BURGER MENU END
+
+// NAVIGATION END 
+
+// HELP BUTTON START
+
+.help-button-wrapper {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: center;
+}
+.help-button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: none;
+  background: $main-c;
+  color: $white-1;
+}
+
+.help-button span {
+  font-size: 2em;
+}
+
+// HELP BUTTON END
+
+// HOMEPAGE START
+
+>>>>>>> Stashed changes
 .favorite {
   display: flex;
   justify-content: flex-start;
@@ -194,9 +411,6 @@ main {
   }
 }
 
-/*    Favorite END     */
-
-/*    HOME PAGE      */
 .card-container {
   background-color: $white-3;
   border: 1px solid $border;
@@ -263,7 +477,16 @@ main {
   }
 }
 
-/*     FEED      */
+//TEACHER HOMEPAGE START
+
+ input[type="submit"] {
+  @include main-button();
+}
+
+//TEACHER HOMEPAGE END
+
+// UPDATES START 
+
 .feed {
   .feed_post {
     background-color: $white-1;
@@ -340,7 +563,209 @@ main {
   }
 }
 
+<<<<<<< Updated upstream
 .sidebarnav {
+=======
+// TEACHER UPDATES START
+
+.new_post_button{
+  @include main-button();
+}
+
+// TEACHER UPDATES END
+
+#message{
+  height: 15rem;
+}
+.schedule-page {
+  display: none;
+}
+
+.sidebarnav {
+  .icon {
+    height: 18px;
+    vertical-align: middle;
+  }
+
+  details {
+    font-size: 1rem;
+  }
+
+  ul {
+    padding: 0rem 1rem;
+  }
+
+  ul li {
+    color: $accent;
+    padding: 0px;
+
+    .icon {
+      padding-right: 0.5rem;
+    }
+
+    a:hover {
+      color: $white-1;
+    }
+
+    a {
+      margin: 0px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 38px;
+    }
+  }
+
+  li:hover {
+    background-color: $secondary;
+  }
+}
+
+.assignment-row {
+  padding-bottom: 5%;
+  margin-top: 15%;
+  border-bottom: 1px solid black;
+  height: 110px;
+}
+
+// HOMEPAGE END
+
+// SCHEDULE START
+
+#lesson-card {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+  .date {
+    flex: 100%;
+  }
+
+  .schedule-card {
+    flex: 55%;
+  }
+}
+
+.time-card {
+  @include schedule-card();
+  flex: 1 1 25%;
+  margin-right: 1%;
+}
+
+// TEACHER SCHEDULE START
+
+.addtoschedule {
+  @include main-button();
+  position: absolute;
+  right: 10rem;
+}
+
+// TEACHER SCHEDULE END
+
+// SCHEDULE END
+
+// LOGIN START 
+
+#login-container {
+  background-color: $white-3;
+  border: 1px solid $border;
+  padding: 50px 20px;
+  border-radius: $border-radius-1;
+  grid-column: 5 / 11;
+  grid-row: 2;
+  height: fit-content;
+  width: 75%;
+  margin: auto;
+
+  input {
+    width: 98%;
+    height: 2rem;
+    margin: 3% 0;
+    border-radius: $border-radius-input;
+    padding-left: 2%;
+  }
+}
+
+#login-button {
+  @include main-button();
+  width: 101%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: $white-1;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+
+#login-wrapper {
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(354deg, #3e1788 0%, $main-c 74%);
+  height: 100vh;
+}
+
+// LOGIN END 
+
+// ASSIGNMENTS START
+
+#sort-container {
+  margin-bottom: 1%;
+  height: 2rem;
+
+  input {
+    width: 50%;
+    height: 100%;
+    border-radius: $border-radius-input;
+    border: 1px solid $border;
+  }
+
+  select {
+    color: $main-c;
+    background-color: $white-1;
+    border-radius: $border-radius-input;
+    height: 100%;
+    border: 1px solid $border;
+  }
+}
+
+.assignment-info-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+}
+
+.upload-button {
+  @include main-button();
+  margin-top: 2%;
+}
+
+.attachment-format {
+  @include fileformat-icon();
+  vertical-align: middle;
+}
+
+//TEACHER ASSIGNMENTS
+
+div .new_assignment {
+  @include main-button();
+  margin: 1rem 1rem;
+  grid-column: 10 / span 1;
+}
+
+// ASSIGNMENTS END
+
+//RESOURCES START
+
+.nestedresitems {
+>>>>>>> Stashed changes
   background-color: $main-c;
   top: 0;
   left: 0;
@@ -350,11 +775,61 @@ main {
   margin: -2rem 0rem 0rem -1rem !important;
   ul li {
     color: $white-1;
+<<<<<<< Updated upstream
     padding: 20px 0px;
+=======
+    text-decoration: none;
+    padding-left: 2rem;
+    border-radius: $border-radius-1;
+  }
+
+  a:hover {
+    color: $highlight;
+  }
+}
+
+.resources {
+  color: $main-c;
+}
+
+// TEACHER RESOURCES
+
+.uploadfiles button {
+  @include main-button();
+}
+
+.file-information {
+  white-space: break-spaces;
+  background-color: $main-c;
+  border-bottom: 1px solid $border;
+}
+
+// RESOURCES END
+
+//PROFILE START
+
+.myprofile h3 {
+    color: $main-c;
+  }
+.profileinfo p {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  margin-top: -0.5rem;
+}
+
+.profileimg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.profilesome {
+  margin-top: 3rem;
+>>>>>>> Stashed changes
 
     a {color: $accent;}
   }
 }
+<<<<<<< Updated upstream
 .sidebarbottom{
     border-top: 1px solid white;
 }
@@ -366,19 +841,333 @@ main {
 }
 
 @media only screen and (min-width: 1100px) {
+=======
+
+.change-profile {
+  label {
+    font-size: 1.2em;
+  }
+}
+
+input[type="submit"] {
+  @include main-button();
+  padding: 1rem;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="time"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+//PROFILE END
+
+.sidebarnav {
+  display: none;
+}
+
+// MEDIA QUERY START
+
+// MOBILE 
+
+@media only screen and (min-width: 600px) {
+  .navbar-top {
+    border-left: 1px solid rgba(244, 237, 255, 0.17);
+    left: 0;
+  }
+
+  .logodesktop {
+    display: block;
+    margin-bottom: 1rem;
+
+    a {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    ul {
+      flex-direction: row;
+    }
+  }
+}
+
+// TABLET
+
+@media only screen and (min-width: 900px) {
+>>>>>>> Stashed changes
   main {
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-gap: 20px;
     grid-template-rows: repeat(4, 250px);
   }
+<<<<<<< Updated upstream
   .mobilenav {
     display: none;
   }
   .sidebarnav {
     grid-column: 1 / span 2;
     grid-row: 1 / span 4;
+=======
+
+  p {
+    font-size: 1em;
   }
+  
+  .mobilenav {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  
+
+  .schedule-view {
+    margin-top: 3rem;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 2rem;
+
+    .columnSchedule {
+      display: grid;
+      grid-template-rows: repeat(20, 1fr);
+      row-gap: 25px;
+
+      .timeBlock {
+        background-color: $highlight;
+        border-left: 4px $secondary solid;
+        grid-row: 2 / span 6;
+
+        p {
+          color: $white-1;
+        }
+      }
+    }
+
+    .scheduleDay {
+      text-align: center;
+    }
+  }
+  .myprofile {
+    grid-column: 1 / span 12;
+  }
+
+  .assignment-container {
+    grid-column: 1 / span 8;
+    height: fit-content;
+  }
+
+  .schedule-view {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
+  }
+
+  .schedule-page {
+    display: initial;
+    grid-column: 1 / 14;
+    height: fit-content;
+  }
+
+  #schedule-hide {
+    display: none;
+  }
+
+  .sidebarnav {
+    display: initial;
+  }
+
+  .card-container {
+    margin: 0;
+  }
+
+  .file-information {
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 10px;
+
+    
+
+    .fileinfo1 {
+      grid-column: 1 / span 9;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .fileinfo2 {
+      grid-column: 10 / span 1;
+    }
+
+    .fileinfo3 {
+      grid-column: 12 / span 1;
+    }
+  }
+
+  .assignment-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: #ffffff;
+    border: 1px solid #bfc9d8;
+    border-radius: 8px;
+    word-break: break-word;
+    padding: 10px 0px 10px 0px;
+    font-size: 0.6rem;
+    height: auto;
+
+    :nth-child(1) {
+      grid-column: 2 / 4;
+    }
+
+    :nth-child(2) {
+      grid-column: 4 / 6;
+    }
+
+    :nth-child(3) {
+      grid-column: 6 / 8;
+    }
+
+    :nth-child(4) {
+      grid-column: 8 / 10;
+    }
+
+    :nth-child(5) {
+      grid-column: 10 / 12;
+      text-align: center;
+    }
+
+    .fileformat-overview {
+      @include fileformat-icon();
+      grid-column: 1;
+      grid-row: 1 / 3;
+      margin: auto;
+      position: inherit;
+    }
+  }
+
+  .assignment-pos {
+    grid-column: 1 / 15;
+    height: fit-content;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .assignment-aside {
+    height: fit-content;
+    grid-column: 9 / 13;
+  }
+
+  .assignment-title > h3 {
+    display: initial;
+  }
+
+  .assignment-row {
+    margin: 0;
+  }
+
+  .navbar-top {
+    left: 14rem;
+
+    > ul {
+      justify-content: flex-end;
+    }
+  }
+
+  .resources {
+    grid-column: 1 / span 13;
+    grid-row: 3;
+    color: $white-1;
+  }
+
+  .sidebarnav {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4;
+    width: 14rem;
+    background-color: $main-c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    height: 100vw;
+
+    .logodesktop {
+      margin: 0.5rem 1.8rem 1rem 1.2rem;
+    }
+
+    .menu-item-row {
+      margin-bottom: 0.5rem;
+
+      a {
+        color: $accent;
+        text-decoration: none;
+
+        .menu-item {
+          height: 40px;
+          line-height: 40px;
+          width: 100%;
+          font-size: 15px;
+          font-weight: 500;
+
+          .menu-icon {
+            padding: 0rem 0.4rem 0rem 1rem;
+          }
+        }
+      }
+    }
+
+    .menu-item-row:hover {
+      background-color: $secondary;
+    }
+
+    .menu-active {
+      background-color: $secondary;
+    }
+
+    a {
+      color: $accent;
+    }
+
+    .sidebarnav-wrapper {
+      padding: 2rem;
+    }
+    .space-name {
+      text-overflow: ellipsis;
+    }
+  }
+  .hide {
+    display: none;
+  }
+  .accordion-active {
+    display: block !important;
+  }
+  
+  // CHEVRON ANIMATION
+
+  .chevron {
+    transition: transform 0.1s linear;
+    transform: rotate(0deg);
+  }
+
+  .chevron-active {
+    transition: transform 0.1s linear;
+    transform: rotate(90deg);
+>>>>>>> Stashed changes
+  }
+
+    // CHEVRON END
+
   .schedule {
     grid-column: 12 / span 6;
     grid-row: 1 / span 2;
@@ -392,6 +1181,35 @@ main {
     grid-row: 2 / span 6;
   }
   .favoritespaces {
+<<<<<<< Updated upstream
     grid-column: 3 / span 9;
+=======
+    grid-column: 1 / span 8;
+    grid-row: 1;
+
+    .favorite .dot {
+      height: 150px;
+      width: 150px;
+
+      span {
+        height: 150px;
+        width: 150px;
+        font-size: 1rem;
+      }
+    }
   }
 }
+
+// DESKTOP
+
+@media only screen and (min-width: 1100px) {
+  .assignment-grid {
+    font-size: 0.8rem;
+  }
+  .navbar-top {
+    padding-right: 1rem !important;
+>>>>>>> Stashed changes
+  }
+}
+
+// MEDIA QUERY END
